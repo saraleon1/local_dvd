@@ -9,7 +9,7 @@ view: store {
 
   dimension: address_id {
     type: number
-    order_by_field: count
+#     order_by_field: count
     # hidden: yes
     sql: ${TABLE}.address_id ;;
   }
