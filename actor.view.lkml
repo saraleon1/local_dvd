@@ -9,7 +9,8 @@ view: actor {
 
   dimension: first_name {
     type: string
-    sql: ${TABLE}.first_name ;;
+#     sql: (SELECT ${TABLE}.first_name FROM ${TABLE} GROUP BY 1 HAVING ${TABLE}.first_name LIKE 'Adam' );;
+    sql:  ${TABLE}.first_name;;
   }
 
   dimension: last_name {
