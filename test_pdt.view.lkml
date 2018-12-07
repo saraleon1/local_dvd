@@ -1,5 +1,6 @@
 view: test_pdt {
     derived_table: {
+      indexes: ["customer_id"]
       explore_source: payment {
         column: customer_id {
           field: payment.customer_id
@@ -11,6 +12,8 @@ view: test_pdt {
           field: payment.lifetime_sale
         }
       }
+      sql_trigger_value: SELECT DATE_PART('minute', NOW()) ;;
+
     }
     dimension: customer_id {
       type: number

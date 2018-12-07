@@ -14,6 +14,7 @@ view: film {
 
   dimension: fulltext {
     type: string
+    label:"new name yo"
     sql: ${TABLE}.fulltext ;;
   }
 
