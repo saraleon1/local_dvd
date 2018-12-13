@@ -289,6 +289,8 @@ explore: rental {
 
 explore: sales_by_film_category {}
 
+explore: pdt_for_sme {}
+
 explore: sales_by_store {}
 
 explore: staff {
