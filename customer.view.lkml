@@ -75,18 +75,17 @@ view: customer {
 
   measure: count {
     type: count
-#     sql: ${address_id} ;;
     drill_fields: [detail*]
   }
 
   measure: sum {
     type: sum
-#     sql: ${address_id} ;;
+    sql: ${address_id} ;;
   }
 
   measure: division {
     type: number
-#     sql: ${sum} / ${count};;
+    sql: ${sum} / ${count};;
   }
 
   # ----- Sets of fields for drilling ------
