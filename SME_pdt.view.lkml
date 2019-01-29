@@ -9,8 +9,7 @@ FROM public.customer  AS customer
 
 GROUP BY 1,2,3  ;;
 
-sql_trigger_value: SELECT DATE_PART('hour', NOW())
- ;;
+sql_trigger_value: SELECT DATE_PART('hour', NOW());;
   }
   dimension: active {
     type: number

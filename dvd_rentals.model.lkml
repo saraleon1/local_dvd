@@ -347,4 +347,7 @@ explore: store {
     relationship: many_to_one
   }
 
+
 }
+
+explore: sme_pdt {}
