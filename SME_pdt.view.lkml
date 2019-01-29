@@ -1,6 +1,8 @@
 view: sme_pdt {
   derived_table: {
-    sql: SELECT
+    sql:
+
+    SELECT
   customer.active  AS "customer.active",
   customer.address_id  AS "customer.address_id",
   customer.store_id  AS "customer.store_id",
